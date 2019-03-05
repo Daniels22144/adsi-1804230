@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>cuadrado</h1>
+	<canvas	id="miDibujo"></canvas>	
+<script>	
+	 var	canvas			=	document.getElementById('miDibujo');	
+	 var	ctx						=	canvas.getContext('2d');	
+	 ctx.fillStyle='#f00';	
+	 ctx.fillRect(0,0,100,100);	
+</script>
+	<h1>rectangulo</h1>
+	<canvas	id="rectangulo"></canvas>	
+<script>	
+	 var	canvas			=	document.getElementById('rectangulo');	
+	 var	ctx						=	canvas.getContext('2d');	
+	 ctx.fillStyle='#f00';	
+	 ctx.fillRect(0,0,400,100);	
+</script>
+	<h1>triangulo</h1>
+	<canvas	id="triangulo"></canvas>	
+<script>	
+	 var	canvas			=	document.getElementById('triangulo');	
+	 var	ctx						=	canvas.getContext('2d');	
+	 ctx.fillStyle='#f00';		 	
+    ctx.beginPath();
+    ctx.moveTo(100,50);
+    ctx.lineTo(200,75);
+    ctx.lineTo(300,25);
+    ctx.closePath();
+    ctx.fill();
+</script>
+	<h1>circulo</h1>
+	<canvas	id="circulo"></canvas>	
+<script>	
+	 var canvas = document.getElementById('circulo');
+
+     var ctx = canvas.getContext('2d');
+     ctx.fillStyle='#c00'
+
+    ctx.beginPath();
+    ctx.arc(75,75,50,0,Math.PI*2,true); 
+    ctx.closePath();
+    ctx.fill()
+</script>
+	<h1>corazon</h1>
+	<canvas id="corazon"></canvas>
+<script>
+	var canvas = document.getElementById('corazon');
+  
+    var ctx = canvas.getContext('2d');
+    ctx.fillStyle='#c00'
+    
+
+	 ctx.beginPath();
+     ctx.moveTo(75,40);
+     ctx.bezierCurveTo(75,37,70,25,50,25);
+     ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
+     ctx.bezierCurveTo(20,80,40,102,75,120);
+     ctx.bezierCurveTo(110,102,130,80,130,62.5);
+     ctx.bezierCurveTo(130,62.5,130,25,100,25);
+     ctx.bezierCurveTo(85,25,75,37,75,40);
+     ctx.fill();
+	
+</script>
+
+	<h1>texto</h1>
+	<canvas id="texto"></canvas>
+<script>
+	 var canvas	= document.getElementById('texto');
+	 var ctx = texto.getContext('2d');
+	 ctx.fillStyle= '#f00'
+	 ctx.font= "60px Comic sans";
+	 ctx.fillText("Danny",20,80);
+</script>
+</body>
+</html>
