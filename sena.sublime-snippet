@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-Hola soy estudiante del sena del tecnologo de analisis y desarrollo de siatemas de informacion
-]]></content>
-	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	 <tabTrigger>sena</tabTrigger> 
-	<!-- Optional: Set a scope to limit where the snippet will trigger -->
-	<!-- <scope>source.python</scope> -->
-</snippet>
